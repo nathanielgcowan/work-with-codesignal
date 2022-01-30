@@ -1,3 +1,3 @@
-function name(params1, params2) {
-    return params1, params2
+function name(p1, p2) {
+    return p1 + p2
 }
