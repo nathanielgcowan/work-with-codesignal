@@ -1,7 +1,10 @@
-function name(arr) {
-    var pd = arr[0] * arr[1]
-    for (i=0; i < arr.length; i++) {
-        pd = arr[i] * arr[i+1] >= pd ? arr[i] * arr[i+1] : pd
+function solution(inputArray) {
+    var product = inputArray[0] * inputArray[1]
+    
+    for ( i=0; i < inputArray.length; i++) {
+        product = inputArray[i] * inputArray[i + 1] > product ? inputArray[i] * inputArray[i + 1] : product
     }
-    return pd 
+    
+    return product
 }
+
